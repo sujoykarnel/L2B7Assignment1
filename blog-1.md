@@ -6,7 +6,7 @@
 
 - Type Narrowing : When we checking the unknown type data before use it, it's called type narrowing.
 
-* Some technics of type narrowing
+Some technics of type narrowing
 
 1. typeof
 2. instanceof
