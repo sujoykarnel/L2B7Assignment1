@@ -1,7 +1,7 @@
 /* Problem: 1 */
 
 function filterEvenNumbers(arryOfNum: number[]): number[] {
-  return arryOfNum.filter((elem: number) => elem % 2 === 0);
+  return arryOfNum.filter((num) => num % 2 === 0);
 }
 
 const evenNumber = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
@@ -10,8 +10,8 @@ console.log(evenNumber);
 
 /* Problem: 2 */
 
-function reverseString(string: string): string {
-  return string.split("").reverse().join("");
+function reverseString(str: string): string {
+  return str.split("").reverse().join("");
 }
 
 const reverseResult = reverseString("typescript");
@@ -21,8 +21,8 @@ console.log(reverseResult);
 
 type StringOrNumber = string | number;
 
-function checkType(data: StringOrNumber): string {
-  if (typeof data === "string") {
+function checkType(value: StringOrNumber): string {
+  if (typeof value === "string") {
     return "String";
   } else {
     return "Number";
