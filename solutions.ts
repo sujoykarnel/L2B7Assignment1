@@ -95,7 +95,7 @@ class Student extends Person {
 const student = new Student("Alice", 20, "A");
 student.getDetails();
 
-/* Problem: 6 */
+/* Problem: 7 */
 
 const getIntersection = (arry1: number[], arry2: number[]): number[] => {
   const presentInBothArray: number[] = [];
