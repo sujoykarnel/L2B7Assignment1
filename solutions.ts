@@ -4,9 +4,7 @@ function filterEvenNumbers(arryOfNum: number[]): number[] {
   return arryOfNum.filter((num) => num % 2 === 0);
 }
 
-const evenNumber = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
-
-console.log(evenNumber);
+filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
 /* Problem: 2 */
 
@@ -14,8 +12,7 @@ function reverseString(str: string): string {
   return str.split("").reverse().join("");
 }
 
-const reverseResult = reverseString("typescript");
-console.log(reverseResult);
+reverseString("typescript");
 
 /* Problem: 3 */
 
@@ -29,9 +26,8 @@ function checkType(value: StringOrNumber): string {
   }
 }
 
-const dataType = checkType(42);
-
-console.log(dataType);
+checkType("Hello");
+checkType(42);
 
 /* Problem: 4 */
 
@@ -40,8 +36,7 @@ const getProperty = <X>(obj: X, key: keyof X) => {
 };
 
 const user = { id: 1, name: "John Doe", age: 21 };
-const userName = getProperty(user, "name");
-console.log(userName);
+getProperty(user, "name");
 
 /* Problem: 5 */
 
@@ -63,7 +58,7 @@ const myBook = {
   author: "Jane Doe",
   publishedYear: 2024,
 };
-console.log(toggleReadStatus(myBook));
+toggleReadStatus(myBook);
 
 /* Problem: 6 */
 
@@ -109,5 +104,4 @@ const getIntersection = (arry1: number[], arry2: number[]): number[] => {
   return presentInBothArray;
 };
 
-const intersectionResult = getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
-console.log(intersectionResult);
+getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
