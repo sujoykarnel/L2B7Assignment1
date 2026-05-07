@@ -94,3 +94,20 @@ class Student extends Person {
 
 const student = new Student("Alice", 20, "A");
 student.getDetails();
+
+/* Problem: 6 */
+
+const getIntersection = (arry1: number[], arry2: number[]): number[] => {
+  const presentInBothArray: number[] = [];
+  const setA = new Set(arry1);
+
+  arry2.forEach((num) => {
+    if (setA.has(num)) {
+      presentInBothArray.push(num);
+    }
+  });
+  return presentInBothArray;
+};
+
+const intersectionResult = getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
+console.log(intersectionResult);
